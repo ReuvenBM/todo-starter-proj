@@ -1,8 +1,9 @@
-const { createStore , combineReducers } = window.Redux
+import {todoReducer} from "./reducers/todo.reducer.js"
 
+const { createStore, combineReducers } = Redux
 
-function appReducer(state = { count: 0 }, cmd) {
-    
-}
+const rootReducer = combineReducers({
+  todoModule: todoReducer
+})
 
-window.store = createStore(appReducer)
+export const store = createStore(rootReducer)

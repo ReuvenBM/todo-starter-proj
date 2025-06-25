@@ -1,6 +1,6 @@
 
 export function todoReducer(state = [], action) {
-  switch (action.type) {
+    switch (action.type) {
     case 'SET_TODOS':
       return action.todos
     case 'ADD_TODO':

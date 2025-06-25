@@ -1,6 +1,6 @@
 const Router = ReactRouterDOM.HashRouter
 const { Routes, Route } = ReactRouterDOM
-const { Provider } = window.ReactRedux
+const { Provider } = ReactRedux
 
 import { AppHeader } from "./cmps/AppHeader.jsx"
 import { Home } from "./pages/Home.jsx"
@@ -11,8 +11,9 @@ import { TodoEdit } from "./pages/TodoEdit.jsx"
 import { AboutTeam } from "./cmps/AboutTeam.jsx"
 import { AboutVision } from "./cmps/AboutVision.jsx"
 import { Dashboard } from "./pages/Dashboard.jsx"
+import { store } from "./store/store.js"
 
-const store = window.store
+
 
 export function RootCmp() {
   return (
